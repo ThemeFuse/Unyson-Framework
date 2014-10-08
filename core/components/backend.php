@@ -239,7 +239,14 @@ final class _FW_Component_Backend
 				fw()->manifest->get_version()
 			);
 
-			
+			if(is_rtl()){
+				wp_register_style(
+					'fw-backend-options-rtl',
+					fw_get_framework_directory_uri('/static/css/backend-options-rtl.css'),
+					array('fw','fw-rtl', 'qtip'),
+					fw()->manifest->get_version()
+				);
+			}
 
 
 			wp_register_script(
@@ -718,6 +725,11 @@ final class _FW_Component_Backend
 
 
 			wp_enqueue_style('fw-backend-options');
+
+			if(is_rtl()){
+				wp_enqueue_style('fw-backend-options-rtl');
+			}
+
 			wp_enqueue_script('fw-backend-options');
 		}
 
