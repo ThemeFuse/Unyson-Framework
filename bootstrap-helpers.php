@@ -60,5 +60,20 @@
 		function fw_get_framework_directory_uri($rel_path = '') {
 			return apply_filters('fw_framework_directory_uri', get_template_directory_uri() .'/framework') . $rel_path;
 		}
+
+		/**
+		 * framework to return the current direction of the blog used to customize the directions in views/backend-options.design-default.php
+		 * and views/backend-options-deisgn-taxonomy.php
+		 * @author  mohammed Manssour <man.mhd@gmail.com>
+		 * @return  string [the direction]
+		 */
+		
+		function _fw_get_blog_direction(){
+			
+			if(is_rtl())
+				return 'right';
+			return 'false';
+		}
+
 	}
 }

@@ -138,6 +138,15 @@ class FW_Option_Type_Style extends FW_Option_Type {
 			$version
 		);
 
+		if(is_rtl()){
+			wp_enqueue_style(
+				'fw-option-' . $this->get_type().'-rtl',
+				self::$extension['URI'] . '/includes/option-types/' . $this->get_type() . '/static/css/styles-rtl.css' ,
+				array('fw-jscrollpane'),
+				$version
+			);
+		}
+
 		wp_enqueue_script(
 			'fw-option-' . $this->get_type(),
 			self::$extension['URI'] . '/includes/option-types/' . $this->get_type() . '/static/js/scripts.js',

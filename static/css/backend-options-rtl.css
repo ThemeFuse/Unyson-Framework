@@ -1,0 +1,72 @@
+.fw-options-tabs-first-level > .fw-options-tabs-list ul li{
+	float: right;
+	margin-right: 0px;
+	margin-left: 6px;
+}
+.fw-options-tabs-contents .fw-options-tabs-list{
+	padding: 0 5px 0 0;
+}
+.postbox .fw-options-tabs-contents .fw-options-tabs-list{
+	padding: 0 25px 0 0;
+}
+.fw-options-tabs-contents .fw-options-tabs-list ul > li {
+	float: right;
+}
+.fw-postbox .handlediv:before{
+	left:12px;
+	right:auto;
+}
+.postbox-with-fw-options > .inside > .fw-backend-options-last-border-hider,
+.fw-postbox > .inside > .fw-backend-options-last-border-hider{
+	right: 0;
+	left: auto;
+}
+.fw-backend-option-design-default > .fw-backend-option-label label{
+	float:right;
+}
+.fw-backend-option-design-default > .fw-backend-option-desc > .fw-inner{
+	padding-left: inherit;
+	padding-right: 1px;
+}
+
+@media (max-width: 782px) {
+	.fw-backend-option-design-default.with-help > .fw-backend-option-label label {
+		margin-right: 0px;
+		margin-left: 8px;
+	}
+}
+
+@media (min-width: 783px) {
+	.fw-backend-option-design-default > .fw-backend-option-label > .fw-inner {
+		padding: 3px 0 0 20px;
+	}
+}
+
+.fw-force-xs .fw-backend-option-design-default.with-help > .fw-backend-option-label label{
+	margin-right: 0px;
+	margin-left: 8px;
+}
+
+.fw-backend-option-design-default.with-help > .fw-backend-option-input > .fw-inner > .fw-option-help,
+.fw-backend-option-design-taxonomy.with-help > td > .fw-backend-option-input > .fw-inner > .fw-option-help{
+	right: auto;
+	left: 0;
+}
+
+.fw-backend-option-design-default.with-help > .fw-backend-option-label > .fw-inner > .fw-option-help{
+	float: right;
+}
+
+@media (min-width: 783px) {
+	.fw-backend-option-design-default.with-help > .fw-backend-option-input > .fw-inner,
+	.fw-backend-option-design-taxonomy.with-help > td > .fw-backend-option-input > .fw-inner {
+		padding-right: 0;
+		padding-left: 26px;
+	}
+
+	.fw-force-xs .fw-backend-option-design-default.with-help > .fw-backend-option-input > .fw-inner,
+	.fw-force-xs .fw-backend-option-design-taxonomy.with-help > td > .fw-backend-option-input > .fw-inner {
+		padding-right: inherit;
+		padding-left: 0;
+	}
+}

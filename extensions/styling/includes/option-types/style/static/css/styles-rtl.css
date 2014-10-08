@@ -1,0 +1,37 @@
+.fw-option-type-style .tabs .block-tab .iris-picker.iris-border{
+	right: 349px;
+	left: auto;
+}
+.fw-option-type-style .fw-options-tabs-first-level.fw-option-type-style-settings > .fw-options-tabs-list ul li a.nav-tab {
+	margin: -4px 0 -1px 4px;
+}
+.fw-option-type-style .style-preview{
+	right: auto;
+	left: 0;
+}
+.fw-option-type-style .fw-option-type-style-settings-tabs.fw-options-tabs-list ul li a.nav-tab {
+	margin: -4px 0 -1px -2px !important;
+}
+
+.fw-option-type-style .style-preview{
+	left: auto !important;
+	right: 820px !important;
+}
+.fw-option-type-style .preview-block p{
+	margin: 0 0 0 100px;
+}
+.fw-option-type-style .preview-block .bl-links {
+	right: auto;
+	left: 15px;
+}
+.fw-option-type-style .preview-block .bl-links a{
+	margin-left: 5px;
+	margin-right: 0;
+}
+.fw-option-type-style .style-preview .jspVerticalBar{
+	right: auto;
+	left: 5px;
+}
+.fw-option-type-style .predefined_styles .fw-option-type-image-picker ul.thumbnails.image_picker_selector li{
+	margin: 0 0 1px 8px;
+}
