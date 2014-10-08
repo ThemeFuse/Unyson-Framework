@@ -136,6 +136,7 @@ class FW_Extension_Styling extends FW_Extension {
 			array(),
 			fw()->manifest->get_version()
 		);
+			
 		wp_enqueue_script(
 			'fw-extension-' . $this->get_name(),
 			$this->get_declared_URI('/static/js/scripts.js'),
