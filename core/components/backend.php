@@ -208,6 +208,15 @@ final class _FW_Component_Backend
 				fw()->manifest->get_version()
 			);
 
+			if(is_rtl()){
+				wp_register_style(
+				'fw-rtl',
+				fw_get_framework_directory_uri('/static/css/fw-rtl.css'),
+				array(),
+				fw()->manifest->get_version()
+			);
+			}
+
 			wp_register_script(
 				'fw',
 				fw_get_framework_directory_uri('/static/js/fw.js'),
@@ -229,6 +238,10 @@ final class _FW_Component_Backend
 				array('fw', 'qtip'),
 				fw()->manifest->get_version()
 			);
+
+			
+
+
 			wp_register_script(
 				'fw-backend-options',
 				fw_get_framework_directory_uri('/static/js/backend-options.js'),
