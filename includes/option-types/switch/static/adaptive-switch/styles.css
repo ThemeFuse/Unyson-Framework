@@ -1,4 +1,5 @@
 .adaptive-switch {
+	direction: ltr;
 	display: inline-block;
 	white-space: nowrap;
 	line-height: 200%;
