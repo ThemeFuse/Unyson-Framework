@@ -135,7 +135,7 @@ class FW_Extension_Population_Method_Categories extends FW_Extension implements 
 					'slider_type' => $slider_name,
 					'population_method' => $population_method,
 					'post_id' => $post_id,
-					'extra' => array(),
+					'extra' => isset($meta['custom-settings']) ? $meta['custom-settings'] : array()
 				)
 			);
 
