@@ -182,7 +182,7 @@ class FW_Extension_Population_Method_Categories extends FW_Extension implements 
 					'title' => get_the_title(),
 					'src' => wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())),
 					'desc' => get_the_excerpt(),
-					'post_id' => get_the_id(),
+					'post_id' => get_the_ID(),
 					'extra' => array()
 				));
 			}
