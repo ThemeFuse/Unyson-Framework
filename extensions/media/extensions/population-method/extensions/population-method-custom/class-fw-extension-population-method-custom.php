@@ -152,6 +152,7 @@ class FW_Extension_Population_Method_Custom extends FW_Extension implements Popu
 			foreach ($meta['custom-slides'] as $slide) {
 				array_push($collector['slides'], array(
 					'title' => $slide['title'],
+					'post_id' => ($slide['multimedia']['selected'] === 'video') ? null : $slide['multimedia'][$slide['multimedia']['selected']]['src']['attachment_id'],
 					'multimedia_type' => $slide['multimedia']['selected'],
 					'src' => ($slide['multimedia']['selected'] === 'video') ? $slide['multimedia'][$slide['multimedia']['selected']]['src'] : $slide['multimedia'][$slide['multimedia']['selected']]['src']['url'],
 					'desc' => $slide['desc'],
